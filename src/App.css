@@ -1,38 +1,1124 @@
-.App {
-  text-align: center;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.productHeadingContainer{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vmax;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.productHeading {
+    font-size: 2vmax;
+ 
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.searchInput {
+    font-size: 1vmax;
+    width: 10vmax;
+    height: 1vmax;
+margin-right: 5vmax;
+border-radius: 0.5vmax;
+padding: 0.2vmax;
+outline: none;
+}
+
+.productList{
+    width: 70vmax;
+    min-height: 90vh;
+  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.Loading{
+    font-size: 2vmax;
+    color: orange;
+}
+
+.test{
+    color: red;
+}
+.myria{
+    color: orange;
+}
+
+body{
+    background-color:black;
+}
+
+.Clock{
+    font-size: 8vmax;
+    color: orange;
+}
+
+.blogBody{
+    background-color: rgb(0, 0, 0);
+}
+.navBar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 1.3vmax 0vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navMyriad{
+    margin-left: 3vmax;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.2vmax;
+    color: white;
+    font-weight: bold;
+    font-size: 2vmax;
+    text-decoration: none;
+  
+}
+
+.navBar div a {
+    font-size: 1.3vmax;
+    padding: 0.9vmax 1.6vmax 0.9vmax 0vmax;
+font-weight: bold;
+color: rgb(249, 206, 33);
+letter-spacing: 0.2 vmax;
+text-decoration: none;
+}
+.navBar:hover{
+    background-color: rgba(69, 62, 0, 0.6);
+    transition: 1s;
+}
+.navBar a:hover {
+  
+    text-shadow: 0px 0px 15px yellow;
+ transition: 0.5s;
+    }
+.landingPage {
+    background: url('./Images/LandingCover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ width: 100%;
+ position: relative;
+}
+.landingLink{
+    position: absolute;
+    bottom: 1.6vmax;
+
+    width: 100%;
+    height: auto;
+    text-align: center;  
+    display: flex;
+    justify-content: space-evenly;
+}
+.landingIcons{
+    text-decoration: none;
+ width: 10vmax;
+    color: orange;
+    font-weight:500;
+    opacity: 0.6;
+    font-size: 1.3vmax;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+transition: 1s;
+padding: 0.2vmax 0vmax;
+}
+.landingIcons:hover{
+text-shadow:  1px 1px 16px orange;
+opacity: 1;
+
+color: orange;
+border-radius: 0.3vmax;
+}
+
+.landingIcons img{
+   height: 1.6vmax;
+   width: 1.6vmax;
+ 
+}
+.landingLink p:hover{
+transition: 0.8s;
+opacity: 1;
+cursor:grab;
+}
+.landingPage h1 {
+font-size: 4.2vmax;
+letter-spacing: 0.3vmax;
+color: white;
+padding: 0;
+margin: 0;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Myr{
+    color: orange;
+}
+.landingPage p {
+    color: white;
+    font-size: 1.3vmax;
+    margin-top: 0.3vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.1vmax;  
+}
+.landingBtn{
+     border: none;
+     padding: 0.5vmax 2.2vmax;
+     margin-top: 1vmax;
+     font-size: 1.2vmax;
+     background-color: orange;
+     cursor: pointer;
+     text-decoration: none;
+     color: white;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     border-radius: 1vmax;
+}
+.landingBtn:hover{
+    background-color: rgba(69, 62, 0, 0.8);
+    transition: 0.6s;
+}
+
+.example{
+    height:  50vh;
+    width: 100%;
+}
+
+.Container{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color:  rgb(0, 0, 0);
+}
+.bestSelling{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bestSelling h1{
+margin: 0.5vmax 0vmax -3.5vmax 0vmax;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 2.1vmax;
+color: rgb(255, 166, 0);
+}
+.bestSallingCardContainer{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1vmax;
+   
+}
+.bestSellCard{
+    height:28vmax;
+    width: 16.4vmax;
+    margin: 0.5vmax 0.5vmax;
+  box-shadow: 0px 0px 1px white;
+}
+.productBody{
+    background-color: black;
+}
+
+.productContainer{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  margin-top: 9vmax;
+    
+}
+.productType{
+    width: 20vmax;
+    height: auto;
+    min-height: 80vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: none;
+    text-align: left;
+    
+}
+.parts{
+ 
+    width: 100%;
+    min-height: 15vmax;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5vmax;
+}
+.brands{
+ 
+    width: 100%;
+    min-height: 15vmax;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.parts div{
+    text-decoration: none;
+    margin: 0.5vmax 0vmax;
+    color: rgb(169, 169, 169);
+    margin-left: 2.8vmax;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.parts div:hover{
   color: white;
 }
+.parts p{
+    font-size: 1.8vmax;
+    margin-bottom: 0.5vmax;
+    font-weight: bold;
+    color: orange;
+}
+.brands div{
+    text-decoration: none;
+    margin: 0.5vmax 0vmax;
+    color: rgb(169, 169, 169);
+    margin-left: 2.8vmax;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.brands p{
+    font-size: 1.8vmax;
 
-.App-link {
-  color: #61dafb;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 0.5vmax;
+}
+.brands div:hover{
+    color: white;
+  }
+
+
+
+
+.cardContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.productListCard{
+    width: 15vmax;
+    height: 22vmax;
+ border: 1px solid rgb(152, 151, 151) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none !important;
+    color: rgb(152, 151, 151) !important;
+    border-radius: 0.7vmax;
+    padding: 1.3vmax 0vmax;
+    margin: 0vmax 1.6vmax 1.6vmax 0vmax;
+    transition: 0.8s;
+    cursor: pointer;
+ 
+}
+.productListCard:hover{
+    box-shadow:  1px 1px 16px orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.productListCard img{
+    width: 100%;
+height: auto;
+
+}
+.productTypeName{
+    display: flex;
+    width: 88%;
+    
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2vmax;
+}
+.productName{
+    width: 88%;
+color: white !important;
+    height: auto;
+    line-height: 2vmax;
+    font-size: 1.3vmax;
+}
+.productPrice{
+    font-size: 1.4vmax;
+    
+}
+
+.detailBody{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+.detail{
+    width: 100%;
+    height: 100vh;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.detail img{
+    width: 45vmax;
+ 
+    min-height: 30vmax;
+}
+.productDetail{
+    list-style-type: circle;
+    width: 30vmax;
+    min-height: 30vmax;
+color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: 1.2vmax;
+}
+.productDetail ul{
+    margin-left: 1.4vmax;
+    color:  rgb(152, 151, 151);
+    font-size: 1.3vmax;
+}
+.productDetail a {
+    
+    padding: 1.5vmax 0.8vmax;
+    border-radius: 0.6vmax;
+    text-decoration:  none;
+    background-color: blue;
+    color: white;
+    font-size: 1vmax;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.productDetail a:hover {
+    
+ 
+    background-color: rgb(10, 10, 111);
+   
+}
+.delivery{
+
+    width: 22vmax;
+height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   background-color: rgb(255, 165, 0, 0.8);
+    color: rgb(245, 245, 245);
+    border-radius: 1vmax 0vmax 0vmax 1vmax ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+ 
+}
+
+.deliverOpt{
+    font-size: 1.4vmax !important;
+    margin: 0vmax 0vmax  -1vmax 0vmax;
+    color: rgb(197, 197, 197) !important;
+}
+
+
+.detailName{
+    font-size: 2.5vmax !important;
+    font-weight: 500;
+}
+.detailPrice{
+    font-size: 2.3vmax !important;
+   font-weight: 500; 
+}
+.deliveryOption{
+    margin: 1vmax 0vmax 0vmax 1vmax;
+    }
+    .deliveryOption p{
+        font-size: 1.9vmax;
+        
+        padding-bottom: 1.5vmax;
+    }
+.warrantyReturn{
+    margin: 1vmax 0vmax 0vmax 1vmax;
+}
+.warrantyReturn p{
+
+    font-size: 1.9vmax;
+
+    padding-bottom: 1.5vmax;
+}
+
+.overviewSection{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+ 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overviewHead{
+    font-size: 2vmax;
+    margin: 1vmax 0vmax 2vmax 7vmax;
+    color: white;
+}
+.overviewContent{
+    height: auto;
+    width: 100%;
+
+display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+}
+.tableContainer{
+    width: 50vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+.tableContainer table{
+    border-collapse: collapse;
+    margin-bottom: 1vmax;
+ width: 20vmax;
+ color: white;
+}
+.tableContainer table th{
+font-size: 1.6vmax;
+}
+.tableContainer table td{
+    font-size: 1.2vmax;
+    padding: 0.7vmax 0.2vmax;
+    }
+.tableContainer table td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+.tableContainer table th{
+ 
+    text-align: left;
+}
+.imageContainer{
+    width: 40vmax;
+    height: auto;
+}
+.imageContainer img{
+    width: 100%;
+    margin: 2vmax 0vmax;
+}
+.contactBody{
+    background-color: rgb(46, 44, 40);
+}
+
+.contactLanding{
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.contactLanding p{
+  margin: 1.5vmax 0vmax;
+  line-height: 2.6vmax;
+  font-size: 2vmax;
+}
+.contactHeading{
+    font-size: 3.5vmax !important;
+    color: orange !important;
+    margin: 0vmax !important;
+    font-weight: 500;
+
+
+}
+.contactLanding a{
+    text-decoration: none;
+    color: orange;
+border: 1px solid orange;
+border-radius: 1vmax;
+    padding: 1vmax 2vmax;
+    transition: 0.8s;
+    font-size: 1.4vmax;
+}
+.contactLanding a:hover{
+
+    color: white;
+border: 1px solid orange;
+background-color: orange;
+}
+.blogBody{
+    height: auto;
+ 
+}
+.blogContainer{
+    height: auto;
+min-height: 62vh;
+    width: 100%;
+    margin: 10vmax 0vmax 5vmax 0vmax;
+}
+.blogContent{
+    min-height: 40vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 8vmax;
+}
+.blogContent img{
+    width: 85%;
+    height: 58vmax;
+   
+    border-radius: 0.8vmax;
+}
+.blogDescription{
+height: auto;
+    width: 85%;
+    margin-bottom: 1vmax;
+text-shadow: 1px 1px 16px orange;
+}
+.blogDate{
+    width: 100%;
+
+    display: flex;
+
+}
+.blogDate p{
+    padding: 0.5vmax 0.5vmax 0.5vmax 0vmax;
+    font-size: 1.2vmax;
+    color: gray !important;
+}
+.blogDescription h3{
+    font-size:2.2vmax;
+    margin-bottom: 0.5vmax;
+}
+.blogPost{
+    font-size: 1.5vmax !important;
+    color: gray !important;
+}
+.footerContainer{
+    height: auto;
+    background-color: rgb(31, 23, 9);
+    width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.followUs{
+    width: 88%;
+    height: 7vmax;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vmax !important;
+    border-bottom: 1px solid white;
+}
+.followUs p{
+    margin: 0vmax 2vmax 0vmax 0vmax ;
+    font-size: 2vmax;
+    font-weight: 500;
+    color: white;
+}
+.followLink a{
+    text-decoration: none;
+    color: rgb(189, 188, 188);
+    padding-right: 1vmax;
+    font-size: 3vmax;
+    transition: 0.3s;
+}
+.followLink a:hover{
+   color: orange;
+}
+.myriadContact{
+    width: 88%;
+    height: 7vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.myriadContact p{
+    margin: 0vmax 2vmax 0vmax 0vmax;
+    font-size: 1.4vmax;
+    font-weight: 500;
+}
+
+.contactLogo{
+    margin: 0vmax 2vmax 0vmax 0vmax !important;
+    font-size: 2vmax !important;
+    font-weight: bolder !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.copyRight{
+    width: 88%;
+    height: 7vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.copyRight p{
+    margin: 0vmax 2vmax 0vmax 0vmax ;
+    font-size: 1vmax;
+    color: rgb(154, 153, 153);
+}
+.stockStatus{
+    width: 100%;
+
+    height: 60vmax;
+    display: flex;
+    flex-direction: column;
+  
+color: white;
+align-items: center;
+    justify-content: flex-start;
+    
+
+}
+.stockStatus i {
+    margin-top: 6vmax;
+    font-size: 8vmax;
+    color: orange;
+}
+.stockStatus p {
+    font-size: 1.5vmax;
+margin-bottom: 0.5vmax;
+
+    text-align: center;
+    width: 50%;
+}
+.caption{
+    font-size: 0.8vmax !important;
+   width: 35% !important;
+   color: rgb(196, 196, 196);
+   letter-spacing: 0.1vmax;
+   text-align: center;
+}
+.outOfStock{
+margin: 0.1vmax;
+    color: white;
+    font-size: 4vmax;
+
+
+}
+@media screen and (max-width:912px){
+    .landingPage h1 {
+        font-size: 6vmax;
+        letter-spacing: 0.3vmax;
+        color: white;
+        
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .landingPage p {
+            font-size: 1.6vmax;
+            margin-top: 0.1vmax;
+            letter-spacing: 0.1vmax;  
+        }
+        .landingBtn{
+        
+             padding: 0.5vmax 3vmax;
+             margin-top: 0.2vmax;
+             font-size: 1.6vmax;
+             border-radius: 1vmax;
+        }
+
+        .landingLink{
+            position: absolute;
+            bottom: 1.6vmax;
+        display: none;
+            width: 100%;
+            height: auto;
+            text-align: center;  
+        }
+        .landingLink a{
+            text-decoration: none;
+            padding: 0vmax 3vmax;
+            color: orange;
+            font-weight:500;
+            opacity: 0.6;
+            font-size: 1.5vmax;
+        }
+        .landingLink a img{
+           height: 1.9vmax;
+           width: 1.9vmax;
+         
+        }
+        .bestSallingCardContainer{
+            padding: 0vmax 2.8vmax;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .bestSelling h1{
+            margin: 7.8vmax 0vmax 2.8vmax 0vmax;
+            font-size: 2.8vmax;
+            }
+        .bestSellCard{
+            height: 45vmax;
+            width: 31.5vmax;
+            margin: 1vmax 0.5vmax;
+            background-color: blue;
+            border-radius: 0.6vmax;
+        }
+        .blogContent img{
+            width: 85%;
+            height: 50vh;
+            border-radius: 0.8vmax;
+        }
+    .detailBody{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        margin-top: 6vmax;
+    }
+    .detail{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .delivery{
+
+        width: 100%;
+    height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+       background-color: rgb(255, 165, 0, 0.8);
+        color: rgb(245, 245, 245);
+        border-radius: 0vmax 0vmax 0vmax 0vmax ;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
+     
+    }
+
+    .productDetail{
+        list-style-type: circle;
+        width: 30vmax;
+        min-height: 30vmax;
+    color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        font-size: 1.6vmax;
+    
+    }
+    .productDetail ul{
+        margin-left: 1.4vmax;
+        color:  rgb(152, 151, 151);
+        font-size: 1.7vmax;
+    }
+    .productDetail a {
+        
+        padding: 1.5vmax 0.8vmax;
+        border-radius: 0.6vmax;
+        text-decoration:  none;
+        background-color: blue;
+        color: white;
+        font-size: 2vmax;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    .detailName{
+        font-size: 3vmax !important;
+        font-weight: 500;
+    }
+    .detailPrice{
+        font-size: 3vmax !important;
+       font-weight: 500; 
+    }
+   
+    .imageContainer{
+        width: 50vmax;
+        height: auto;
+   margin-right: 5vmax;
+    }
+    
+    .tableContainer{
+        width: 50vmax;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    }
+    .overviewContent{
+        height: auto;
+        width: 100%;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .chevron{
+        font-size: 1.5vmax;
+        margin-left: 0.2vmax;
+    }
+    .searchInput {
+        font-size: 1vmax;
+        width: 10vmax;
+        height: 1vmax;
+    margin-right: 3vmax;
+    border-radius: 0.5vmax;
+    padding: 0.2vmax;
+    outline: none;
+    }
+
+    .productHeading {
+        font-size: 1.5vmax;
+     margin-left: 2vmax;
+        color: white;
+    }
+
+    .bestSallingCardContainer{
+        padding: 0vmax 2.8vmax;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .bestSelling h1{
+        margin: 10vmax 0vmax 3.5vmax 0vmax;
+        font-size: 3.4vmax;
+        letter-spacing: 1px;
+        }
+    .bestSellCard{
+        height: 56.5vmax;
+        width: 40.5vmax;
+        margin: 1vmax 0.5vmax;
+        background-color: blue;
+        border-radius: 0.6vmax;
+    }
+    .cardContainer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+   
+    }
+    .productList{
+        width: 70vmax;
+        min-height: 90vh;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    
+    }
+    .detailBody{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        margin-top: 6vmax;
+      
+    }
+    .detail{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+     
+    }
+    .delivery{
+
+        width: 100%;
+    height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+       background-color: rgb(255, 165, 0, 0.8);
+        color: rgb(245, 245, 245);
+        border-radius: 0vmax 0vmax 0vmax 0vmax ;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
+     
+    }
+
+    .productDetail{
+        list-style-type: circle;
+        width: 30vmax;
+        min-height: 30vmax;
+    color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        font-size: 1.6vmax;
+    }
+    .productDetail ul{
+        margin-left: 1.4vmax;
+        color:  rgb(152, 151, 151);
+        font-size: 1.7vmax;
+    }
+    .productDetail a {
+        
+        padding: 1.5vmax 0.8vmax;
+        border-radius: 0.6vmax;
+        text-decoration:  none;
+        background-color: blue;
+        color: white;
+        font-size: 2vmax;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    .detailName{
+        font-size: 3vmax !important;
+        font-weight: 500;
+    }
+    .detailPrice{
+        font-size: 3vmax !important;
+       font-weight: 500; 
+    }
+    
+ .blogContent img{
+    width: 85%;
+    height: 36.5vmax;
+   
+    border-radius: 0.8vmax;
+}
+    .contactLanding{
+        height: 100vh;
+        width: 85%;
+        margin: auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    
+   .contactLanding p{
+  margin: 1.6vmax 0vmax;
+  line-height: 3.8vmax;
+  font-size: 2.8vmax;
+}
+.contactHeading{
+    font-size: 4.5vmax !important;
+    color: orange !important;
+    margin: 0vmax !important;
+    font-weight: 500;
+
+
+}
+.contactLanding a{
+    text-decoration: none;
+    color: orange;
+border: 1px solid orange;
+border-radius: 1vmax;
+    padding: 1vmax 2vmax;
+    transition: 0.8s;
+    font-size: 2.5vmax;
+}
+.overviewContent{
+    height: auto;
+    width: 100%;
+
+display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+}
+.imageContainer{
+    width: 45vmax;
+    height: auto;
+   
+margin-right: 1.3vmax;
+}
+.tableContainer{
+    width: 50vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+flex-wrap: wrap;
+
+
+}
+
+.tableContainer table{
+    border-collapse: collapse;
+    margin-bottom: 1vmax;
+ width: 20vmax;
+ color: white;
+}
+
 }
