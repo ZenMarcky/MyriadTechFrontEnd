@@ -309,7 +309,7 @@ const intelCount = countProductsByBrandType(productCount, "INTEL");
 
                       <div className="productName">
                         <p>{product.name} ({product.condition})</p>
-                        <p className="productPrice">₱{product.price}</p>
+                        <p className="productPrice">₱{product.price.toLocaleString()}.00</p>
                       </div>
                     </Link>
                   );

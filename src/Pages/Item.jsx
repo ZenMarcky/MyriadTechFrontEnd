@@ -62,7 +62,7 @@ const Item = () => {
         
         <div class="productDetail">
         <p class="detailName">{product.name}</p>
-        <p class="detailPrice">₱{product.price}</p>
+        <p class="detailPrice">₱{product.price.toLocaleString()}.00</p>
         <ul>
         
         <li>Memory Size: {product.memorySize}</li>
