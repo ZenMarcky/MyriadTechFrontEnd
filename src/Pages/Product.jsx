@@ -126,7 +126,7 @@ const Product = () => {
   <p>
     <FontAwesomeIcon icon={faChevronDown} /> Brands
   </p>
-  <div onClick={() => handleBrandClick('AMD')}>
+  {/* <div onClick={() => handleBrandClick('AMD')}>
     AMD ({countProductsByBrand(filteredProducts, 'AMD')})
   </div>
   <div onClick={() => handleBrandClick('Intel')}>
@@ -134,7 +134,7 @@ const Product = () => {
   </div>
   <div onClick={() => handleBrandClick('NVIDIA')}>
     NVIDIA ({countProductsByBrand(filteredProducts, 'NVIDIA')})
-  </div>
+  </div> */}
   <div onClick={() => handleBrandClick('Sapphire')}>
     Sapphire ({sapphireBrand})
   </div>
