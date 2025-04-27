@@ -81,7 +81,7 @@ const Product = () => {
   const pnyBrand = countProductsByBrand(productCount, 'PNY');
   const powerColorBrand = countProductsByBrand(productCount, 'PowerColor');
   const xfxBrand = countProductsByBrand(productCount, 'XFX');
-  const arktekBrand = countProductsByBrand(productCount, 'ARKTEK');
+  const arktekBrand = countProductsByBrand(productCount, 'Arktek');
 
   // Function to handle brand selection
   const handleBrandClick = (brand) => {
@@ -174,7 +174,7 @@ const Product = () => {
   <div onClick={() => handleBrandClick('XFX')}>
     XFX ({xfxBrand})
   </div>
-  <div onClick={() => handleBrandClick('ARKTEK')}>
+  <div onClick={() => handleBrandClick('Arktek')}>
     ARKTEK ({arktekBrand})
   </div>
 </div>
