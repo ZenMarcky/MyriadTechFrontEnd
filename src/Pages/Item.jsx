@@ -37,7 +37,7 @@ const Item = () => {
     if (!product) return <p className='Loading'>Loading...</p>;
   
     return (
-        <div>
+        <div className='adjustment'>
 
         <nav class="navBar">
         <Link to={`/`} className="navMyriad"><span class="Myr">Myri</span>ad
