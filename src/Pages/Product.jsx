@@ -52,18 +52,28 @@ const Product = () => {
     return products.filter((product) => product.brand === brand).length;
   }
 
+  function countProductsByBrandType(products, brand) {
+    return products.filter((product) => product.brandType === brand).length;
+  }
   
 
+ 
+
   const filteredProducts = product.filter((item) => {
-    const matchesBrandOrType = selectedBrand
-      ? item.brand === selectedBrand || item.type === selectedBrand
-      : true;
-      
+    let matchesBrandOrType = true;
+  
+    if (selectedBrand) {
+      if (["AMD", "INTEL", "NVIDIA"].includes(selectedBrand)) {
+        matchesBrandOrType = item.brandType === selectedBrand;
+      } else {
+        matchesBrandOrType = item.brand === selectedBrand || item.type === selectedBrand;
+      }
+    }
+  
     const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
   
     return matchesBrandOrType && matchesSearch;
   });
-
 
   // Get the count of GPUs and Processors
   const gpuCount = countProductsByType(productCount, 'Graphics Card');
@@ -82,6 +92,10 @@ const Product = () => {
   const powerColorBrand = countProductsByBrand(productCount, 'PowerColor');
   const xfxBrand = countProductsByBrand(productCount, 'XFX');
   const arktekBrand = countProductsByBrand(productCount, 'Arktek');
+const nvidiaCount = countProductsByBrandType(productCount, "NVIDIA");
+const amdCount = countProductsByBrandType(productCount, "AMD");
+const intelCount = countProductsByBrandType(productCount, "INTEL");
+
 
   // Function to handle brand selection
   const handleBrandClick = (brand) => {
@@ -126,21 +140,21 @@ const Product = () => {
   <p>
     <FontAwesomeIcon icon={faChevronDown} /> Brands
   </p>
-  {/* <div onClick={() => handleBrandClick('AMD')}>
-    AMD ({countProductsByBrand(filteredProducts, 'AMD')})
+  <div style={{color:'red'}}  onClick={() => handleBrandClick('AMD')}>
+    AMD ({amdCount})
   </div>
-  <div onClick={() => handleBrandClick('Intel')}>
-    Intel ({countProductsByBrand(filteredProducts, 'Intel')})
+  <div style={{color:'blue'}} onClick={() => handleBrandClick('Intel')}>
+    INTEL ({intelCount})
   </div>
-  <div onClick={() => handleBrandClick('NVIDIA')}>
-    NVIDIA ({countProductsByBrand(filteredProducts, 'NVIDIA')})
-  </div> */}
+  <div style={{color:'green'}} onClick={() => handleBrandClick('NVIDIA')}>
+    NVIDIA ({nvidiaCount})
+  </div>
   <div onClick={() => handleBrandClick('Sapphire')}>
     Sapphire ({sapphireBrand})
   </div>
-  {/* <div onClick={() => handleBrandClick('Samsung')}>
+  <div onClick={() => handleBrandClick('Samsung')}>
     Samsung ({samsungBrand})
-  </div> */}
+  </div>
   <div onClick={() => handleBrandClick('Asus')}>
     ASUS ({asusBrand})
   </div>
