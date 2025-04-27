@@ -115,14 +115,19 @@ text-decoration: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    height: auto    ;
+    /* min-height: 100vh;
+    height: auto   stock changes ; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
  width: 100%;
  position: relative;
+
+ min-height: 100vh;
+ height: auto;
+ width: 100%;
+ margin-top: -5vmax;
 }
 .landingLink{
     position: absolute;
@@ -556,8 +561,8 @@ font-size: 1.6vmax;
 }
 
 .contactLanding{
-    height: 100vh;
-    width: 50%;
+    /* height: 100vh;
+    width: 50%; none */
     margin: auto;
     color: white;
     display: flex;
@@ -567,6 +572,11 @@ font-size: 1.6vmax;
 
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    min-height: 100vh;
+    height: auto;
+    width: 50%;
+    margin-top: -5vmax;
     
 }
 .contactLanding p{

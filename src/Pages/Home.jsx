@@ -19,7 +19,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () =>{
     return(
-<div> <nav className="navBar">
+<div> 
+    <nav className="navBar">
 <Link to={`/`} className="navMyriad"><span class="Myr">Myri</span>ad
 </Link>
      <div>
