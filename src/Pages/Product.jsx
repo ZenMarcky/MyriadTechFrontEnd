@@ -129,7 +129,11 @@ const intelCount = countProductsByBrandType(productCount, "INTEL");
     <FontAwesomeIcon icon={faChevronDown} className='chevron'/> Category
   </p>
   <div onClick={() => handleBrandClick('Processor')}>Processor ({processorCount})</div>
-  <div onClick={() => handleBrandClick('Graphics Card')}>Graphics Card ({gpuCount})</div>
+  <div onClick={() => handleBrandClick('Graphics Card')}>Graphics Card (
+  <span style={{ color: gpuCount > 0 ? 'orange' : 'inherit' }}>
+    {gpuCount}
+  </span>
+  )</div>
   <div onClick={() => handleBrandClick('Memory')}>Computer Memory (0)</div>
   <div onClick={() => handleBrandClick('Power Supply')}>Power Supply (0)</div>
   <div onClick={() => handleBrandClick('Storage HDD')}>Storage (HDD) (0)</div>
@@ -141,56 +145,125 @@ const intelCount = countProductsByBrandType(productCount, "INTEL");
     <FontAwesomeIcon icon={faChevronDown} /> Brands
   </p>
   <div style={{color:'red'}}  onClick={() => handleBrandClick('AMD')}>
-    AMD ({amdCount})
+    AMD (
+  <span style={{ color: amdCount > 0 ? 'orange' : 'inherit' }}>
+    {amdCount}
+  </span>
+  )
   </div>
   <div style={{color:'blue'}} onClick={() => handleBrandClick('Intel')}>
-    INTEL ({intelCount})
+    INTEL (
+  <span style={{ color: intelCount > 0 ? 'orange' : 'inherit' }}>
+    {intelCount}
+  </span>
+  )
   </div>
   <div style={{color:'green'}} onClick={() => handleBrandClick('NVIDIA')}>
-    NVIDIA ({nvidiaCount})
+    NVIDIA (
+  <span style={{ color: nvidiaCount > 0 ? 'orange' : 'inherit' }}>
+    {nvidiaCount}
+  </span>
+  )
   </div>
   <div onClick={() => handleBrandClick('Sapphire')}>
-    Sapphire ({sapphireBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Samsung')}>
-    Samsung ({samsungBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Asus')}>
-    ASUS ({asusBrand})
-  </div>
-  <div onClick={() => handleBrandClick('EVGA')}>
-    EVGA ({evgaBrand})
-  </div>
-  <div onClick={() => handleBrandClick('ASRock')}>
-    ASRock ({asrockBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Corsair')}>
-    Corsair ({corsairBrand})
-  </div>
-  <div onClick={() => handleBrandClick('MSI')}>
-    MSI ({msiBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Palit')}>
-    Palit ({palitBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Gigabyte')}>
-    Gigabyte ({gigabyteBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Zotac')}>
-    ZOTAC ({zotacBrand})
-  </div>
-  <div onClick={() => handleBrandClick('PNY')}>
-    PNY ({pnyBrand})
-  </div>
-  <div onClick={() => handleBrandClick('PowerColor')}>
-    PowerColor ({powerColorBrand})
-  </div>
-  <div onClick={() => handleBrandClick('XFX')}>
-    XFX ({xfxBrand})
-  </div>
-  <div onClick={() => handleBrandClick('Arktek')}>
-    ARKTEK ({arktekBrand})
-  </div>
+  Sapphire (
+  <span style={{ color: sapphireBrand > 0 ? 'orange' : 'inherit' }}>
+    {sapphireBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Samsung')}>
+  Samsung (
+  <span style={{ color: samsungBrand > 0 ? 'orange' : 'inherit' }}>
+    {samsungBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Asus')}>
+  ASUS (
+  <span style={{ color: asusBrand > 0 ? 'orange' : 'inherit' }}>
+    {asusBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('EVGA')}>
+  EVGA (
+  <span style={{ color: evgaBrand > 0 ? 'orange' : 'inherit' }}>
+    {evgaBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('ASRock')}>
+  ASRock (
+  <span style={{ color: asrockBrand > 0 ? 'orange' : 'inherit' }}>
+    {asrockBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Corsair')}>
+  Corsair (
+  <span style={{ color: corsairBrand > 0 ? 'orange' : 'inherit' }}>
+    {corsairBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('MSI')}>
+  MSI (
+  <span style={{ color: msiBrand > 0 ? 'orange' : 'inherit' }}>
+    {msiBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Palit')}>
+  Palit (
+  <span style={{ color: palitBrand > 0 ? 'orange' : 'inherit' }}>
+    {palitBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Gigabyte')}>
+  Gigabyte (
+  <span style={{ color: gigabyteBrand > 0 ? 'orange' : 'inherit' }}>
+    {gigabyteBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Zotac')}>
+  ZOTAC (
+  <span style={{ color: zotacBrand > 0 ? 'orange' : 'inherit' }}>
+    {zotacBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('PNY')}>
+  PNY (
+  <span style={{ color: pnyBrand > 0 ? 'orange' : 'inherit' }}>
+    {pnyBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('PowerColor')}>
+  PowerColor (
+  <span style={{ color: powerColorBrand > 0 ? 'orange' : 'inherit' }}>
+    {powerColorBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('XFX')}>
+  XFX (
+  <span style={{ color: xfxBrand > 0 ? 'orange' : 'inherit' }}>
+    {xfxBrand}
+  </span>
+  )
+</div>
+<div onClick={() => handleBrandClick('Arktek')}>
+  ARKTEK (
+  <span style={{ color: arktekBrand > 0 ? 'orange' : 'inherit' }}>
+    {arktekBrand}
+  </span>
+  )
+</div>
+
 </div>
 
           </div>
