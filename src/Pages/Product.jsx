@@ -138,9 +138,9 @@ const Product = () => {
   <div onClick={() => handleBrandClick('Sapphire')}>
     Sapphire ({sapphireBrand})
   </div>
-  <div onClick={() => handleBrandClick('Samsung')}>
+  {/* <div onClick={() => handleBrandClick('Samsung')}>
     Samsung ({samsungBrand})
-  </div>
+  </div> */}
   <div onClick={() => handleBrandClick('Asus')}>
     ASUS ({asusBrand})
   </div>
