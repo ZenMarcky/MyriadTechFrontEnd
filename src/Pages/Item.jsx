@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas, faTruck } from "@fortawesome/free-solid-svg-icons";
 import { faHandshake } from "@fortawesome/free-regular-svg-icons";
 import { faShop } from "@fortawesome/free-solid-svg-icons";
+import { faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faEarthAsia } from '@fortawesome/free-solid-svg-icons';
+import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 import axios from 'axios';
 
 
@@ -221,7 +228,27 @@ const Item = () => {
         
         </div>
         
-        
+            <div className="footerContainer">
+                <div className="followUs">
+                <p>Follow us on:</p>
+            <div className="followLink">
+            
+             <a href="https://twitter.com/MyriadTechHub?t=Bku0daU8A8h2GoJVEBIlIg&s=09" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faTwitter} /></a>
+             
+             <a href="https://www.instagram.com/myri.adtech/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faInstagram} /></a>
+             <a href="https://www.facebook.com/profile.php?id=100094288234085" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={faSquareFacebook} /></a>
+            </div>
+                </div>
+            <div className="myriadContact">
+            <p className="contactLogo"><span className="myria">Myri</span>ad</p>
+            <p><FontAwesomeIcon icon={faHeadset} />   +639938818364</p>
+            <p><FontAwesomeIcon icon={faEarthAsia} />   Nationwide</p>
+            <p><FontAwesomeIcon icon={faUserGroup} />   Friendly</p>
+            </div>
+                <div class="copyRight">
+                <p>© 2023 MYRIAD TECHHUB, ALL RIGHTS RESERVED</p>
+                </div>
+                </div>
         
         </div>
     );
