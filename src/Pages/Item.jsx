@@ -56,7 +56,7 @@ const Item = () => {
         
         <div class="detail">
         <img
-            src={require(`../Images/Products/Graphic Card/${product.picture}.jpg`)}
+            src={require(`../Images/Products/Graphic Card/${product.picture}.png`)}
             alt="none"
           />
         

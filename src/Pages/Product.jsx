@@ -303,7 +303,7 @@ const intelCount = countProductsByBrandType(productCount, "INTEL");
                       </div>
 
                       <img
-                        src={require(`../Images/Products/Graphic Card/${product.picture}.jpg`)}
+                        src={require(`../Images/Products/Graphic Card/${product.picture}.png`)}
                         alt={product.picture}
                       />
 
