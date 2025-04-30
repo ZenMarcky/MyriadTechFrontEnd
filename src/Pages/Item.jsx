@@ -56,7 +56,7 @@ const Item = () => {
         
         <div class="detail">
         <img
-            src={require(`../Images/Products/Graphic Card/${product.picture}.png`)}
+            src={require(`../Images/Products/Graphic Card/${product.picture}.jpg`)}
             alt="none"
           />
         
@@ -217,8 +217,8 @@ const Item = () => {
         </table>
     </div>
     <div class="imageContainer">
-        <img src={require(`../Images/Products/Graphic Card/${product.pictureTwo}.png`)} alt="none" />
-        <img src={require(`../Images/Products/Graphic Card/${product.pictureThree}.png`)} alt="none" />
+        <img src={require(`../Images/Products/Graphic Card/${product.pictureTwo}.jpg`)} alt="none" />
+        <img src={require(`../Images/Products/Graphic Card/${product.pictureThree}.jpg`)} alt="none" />
       
         
     </div>
